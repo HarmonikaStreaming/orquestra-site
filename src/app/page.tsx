@@ -6,6 +6,7 @@ import { Pilares }        from "@/components/sections/Pilares";
 import { ComoFunciona }   from "@/components/sections/ComoFunciona";
 import { Funcionalidades } from "@/components/sections/Funcionalidades";
 import { CasosDeUso }     from "@/components/sections/CasosDeUso";
+import { Producao }       from "@/components/sections/Producao";
 import { Planos }         from "@/components/sections/Planos";
 import { FAQ }            from "@/components/sections/FAQ";
 import { CTAFinal }       from "@/components/sections/CTAFinal";
@@ -21,6 +22,7 @@ export default function Home() {
         <ComoFunciona />
         <Funcionalidades />
         <CasosDeUso />
+        <Producao />
         <Planos />
         <FAQ />
         <CTAFinal />

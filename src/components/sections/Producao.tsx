@@ -53,33 +53,42 @@ export function Producao() {
           </div>
 
           {/* Content right */}
-          <div className="card-glass rounded-2xl p-8 flex flex-col justify-between">
-            {/* Logo centralizada */}
-            <div className="flex justify-center">
-              <a
-                href="https://www.harmonika.com.br"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="/images/logo-harmonika.png"
-                  alt="Harmonika Produtora"
-                  style={{ height: "160px", width: "auto", objectFit: "contain" }}
-                />
-              </a>
+          <div className="card-glass rounded-2xl p-8 flex flex-col h-full">
+
+            {/* TOPO: grid 2 colunas — cresce para preencher o espaço acima do botão */}
+            <div className="grid grid-cols-2 gap-6 flex-1 mb-6 min-h-0">
+
+              {/* Coluna esquerda: logo centralizada, ocupa toda a altura */}
+              <div className="flex items-center justify-center min-h-0">
+                <a
+                  href="https://www.harmonika.com.br"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center h-full w-full"
+                >
+                  <img
+                    src="/images/logo-harmonika.png"
+                    alt="Harmonika Produtora"
+                    className="object-contain w-full"
+                    style={{ maxHeight: "180px" }}
+                  />
+                </a>
+              </div>
+
+              {/* Coluna direita: texto alinhado à esquerda, centrado verticalmente */}
+              <div className="flex items-center min-h-0">
+                <p className="text-sm text-ol-slate leading-relaxed">
+                  Conte com a equipe da Harmonika que possui mais de 20 anos de experiência no segmento audiovisual, possui estúdios profissionais e possibilidade de levar uma estrutura completa para cobertura e transmissão do seu evento em qualquer lugar do Brasil.
+                </p>
+              </div>
             </div>
 
-            {/* Texto descritivo centralizado */}
-            <p className="text-sm text-ol-slate leading-relaxed text-center px-4">
-              Conte com a equipe da Harmonika que possui mais de 20 anos de experiência no segmento audiovisual, possui estúdios profissionais e possibilidade de levar uma estrutura completa para cobertura e transmissão do seu evento em qualquer lugar do Brasil.
-            </p>
-
-            {/* Botão largura total */}
+            {/* BASE: botão w-full fixado na parte inferior */}
             <a
               href={WA_LINK_PRODUCAO}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-full items-center justify-center gap-2 rounded-xl px-5 py-4 text-sm font-bold text-white transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5 mt-auto"
+              className="flex w-full items-center justify-center gap-2 rounded-xl px-5 py-4 text-sm font-bold text-white transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5 shrink-0"
               style={{ background: "#25D366" }}
             >
               <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 shrink-0">

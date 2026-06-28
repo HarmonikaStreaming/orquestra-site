@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Logo } from "@/components/ui/Logo";
 
 const NAV_LINKS = [
   { href: "#solucao",       label: "Solução" },
@@ -31,7 +30,11 @@ export function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <a href="#hero" aria-label="Orquestra Live — início">
-          <Logo size="sm" />
+          <img
+            src="/images/logo-orquestra.png"
+            alt="Orquestra Live"
+            style={{ height: "48px", objectFit: "contain" }}
+          />
         </a>
 
         {/* Desktop links */}

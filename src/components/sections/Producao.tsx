@@ -56,7 +56,7 @@ export function Producao() {
           <div className="card-glass rounded-2xl p-8 flex flex-col h-full">
 
             {/* TOPO: grid 2 colunas — cresce para preencher o espaço acima do botão */}
-            <div className="grid grid-cols-2 gap-6 flex-1 mb-6 min-h-0">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 flex-1 mb-6 min-h-0">
 
               {/* Coluna esquerda: logo centralizada, ocupa toda a altura */}
               <div className="flex items-center justify-center min-h-0">

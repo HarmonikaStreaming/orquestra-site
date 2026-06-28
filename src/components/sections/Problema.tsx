@@ -43,12 +43,13 @@ export function Problema() {
         <div className="text-center mb-14 space-y-4">
           <div className="badge mx-auto">O problema</div>
           <h2 className="text-3xl sm:text-4xl font-black tracking-tight">
-            Por que YouTube e Zoom{" "}
+            Por que YouTube, Zoom e Meeting{" "}
             <span className="text-gradient">não são suficientes?</span>
           </h2>
           <p className="text-ol-slate max-w-xl mx-auto">
-            Plataformas genéricas foram feitas para o público geral — não para
-            profissionais que precisam de controle, dados e identidade.
+            São plataformas ótimas para o público geral — mas não para
+            profissionais que precisam de controle acesso, página personalizada,
+            módulo de pagamento e captura de leads.
           </p>
         </div>
 

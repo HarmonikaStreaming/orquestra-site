@@ -22,8 +22,8 @@ export default function Home() {
         <ComoFunciona />
         <Funcionalidades />
         <CasosDeUso />
-        <Producao />
         <Planos />
+        <Producao />
         <FAQ />
         <CTAFinal />
       </main>

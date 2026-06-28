@@ -32,7 +32,7 @@ const CASOS = [
     color: "#7C3AED",
     bg: "rgba(124,58,237,0.10)",
     border: "rgba(124,58,237,0.22)",
-    persona: "Coach / Infoprodutor",
+    persona: "Especialista / Infoprodutor",
     tag: "Digital",
     desc: "Lançamentos digitais, mentorias ao vivo e webinars de vendas com captura de leads qualificados, checkout integrado e follow-up automático.",
     bullets: [

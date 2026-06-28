@@ -4,11 +4,11 @@ const CASOS = [
     color: "#2563EB",
     bg: "rgba(37,99,235,0.10)",
     border: "rgba(37,99,235,0.22)",
-    persona: "Médico / Especialista",
-    tag: "Saúde",
+    persona: "Profissionais, associações e indústria",
+    tag: "Segmento médico",
     desc: "Congressos científicos, atualização médica continuada e simpósios com controle de acesso por número de registro profissional (CFM, CRM, CRO).",
     bullets: [
-      "Acesso por registro profissional (CRM/CFM)",
+      "Acesso por registro profissional com possibilidade de integração via API",
       "Certificado de participação automático",
       "Relatório de presença para credenciamento",
     ],
@@ -70,7 +70,7 @@ export function CasosDeUso() {
             {" "}foi feita?
           </h2>
           <p className="text-ol-slate max-w-xl mx-auto">
-            De empresas de médio e grande porte, agências de eventos e especialistas com cursos e produtos digitais. A plataforma se adapta ao seu contexto com
+            Empresas de médio e grande porte, agências de eventos e especialistas com cursos e produtos digitais. A plataforma se adapta ao seu contexto com
             modos de acesso e configurações específicas para cada segmento.
           </p>
         </div>

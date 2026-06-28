@@ -28,8 +28,8 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        {/* Logo */}
-        <a href="#hero" aria-label="Orquestra Live — início" className="flex items-center">
+        {/* Logo — margem negativa à esquerda para alinhar com a borda do conteúdo */}
+        <a href="#hero" aria-label="Orquestra Live — início" className="flex items-center -ml-3">
           <img
             src="/images/logo-orquestra.png"
             alt="Orquestra Live"

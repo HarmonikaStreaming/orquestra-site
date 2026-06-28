@@ -47,6 +47,23 @@ export function Producao() {
 
           {/* Cards */}
           <div className="space-y-5">
+            {/* Harmonika logo + link */}
+            <div className="flex flex-col gap-3">
+              <img
+                src="/images/logo-harmonika.png"
+                alt="Harmonika Produtora"
+                height={80}
+                style={{ height: "80px", width: "auto", objectFit: "contain" }}
+              />
+              <a
+                href="https://www.harmonika.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-ol-cyan hover:text-white transition-colors"
+              >
+                Conheça a Harmonika Produtora →
+              </a>
+            </div>
             {CARDS.map((c) => (
               <div
                 key={c.title}
@@ -87,32 +104,35 @@ export function Producao() {
             </a>
           </div>
 
-          {/* Video placeholder */}
-          <div className="relative rounded-2xl overflow-hidden border border-ol-border bg-ol-bg aspect-video">
-            {/* Placeholder visible when video has no src */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-4"
-              style={{ background: "linear-gradient(135deg, #0f1e3a 0%, #1a0b3a 100%)" }}
-            >
-              <div className="w-16 h-16 rounded-full bg-white/10 border border-white/20 backdrop-blur flex items-center justify-center">
-                <svg viewBox="0 0 20 20" fill="currentColor" className="w-7 h-7 text-white ml-0.5">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-                </svg>
-              </div>
-              <div className="text-center space-y-1">
+          {/* Video area */}
+          <div className="space-y-3">
+            <div className="relative rounded-2xl overflow-hidden border border-ol-border bg-ol-bg aspect-video">
+              {/* Placeholder visible when video has no src */}
+              <div
+                className="absolute inset-0 flex flex-col items-center justify-center gap-4"
+                style={{ background: "linear-gradient(135deg, #0f1e3a 0%, #1a0b3a 100%)" }}
+              >
+                <div className="w-16 h-16 rounded-full bg-white/10 border border-white/20 backdrop-blur flex items-center justify-center">
+                  <svg viewBox="0 0 20 20" fill="currentColor" className="w-7 h-7 text-white ml-0.5">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                  </svg>
+                </div>
                 <p className="text-sm font-semibold text-white">Showreel Harmonika Produtora</p>
-                <p className="text-xs text-ol-slate">Em breve</p>
               </div>
-            </div>
 
-            {/* Video element — adicione o src quando disponível */}
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="absolute inset-0 w-full h-full object-cover"
-              src=""
-            />
+              {/* Video element — adicione o src quando disponível */}
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover"
+                src=""
+              />
+            </div>
+            <p className="text-center text-xs text-ol-dim">
+              Em breve: showreel de transmissões
+            </p>
           </div>
         </div>
       </div>

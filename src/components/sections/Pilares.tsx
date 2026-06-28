@@ -71,7 +71,7 @@ export function Pilares() {
             <span className="text-gradient">Orquestra Live</span>
           </h2>
           <p className="text-ol-slate max-w-xl mx-auto">
-            Uma plataforma construída do zero para profissionais que precisam
+            Uma plataforma construída do zero para empresas e profissionais que precisam
             de controle total sobre seus eventos digitais.
           </p>
         </div>

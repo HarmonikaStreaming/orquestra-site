@@ -18,8 +18,8 @@ const CASOS = [
     color: "#14B8A6",
     bg: "rgba(20,184,166,0.10)",
     border: "rgba(20,184,166,0.22)",
-    persona: "Advogado / OAB",
-    tag: "Jurídico",
+    persona: "OAB, CREA, CRC, CRP, COREN...",
+    tag: "Associações e Conselhos",
     desc: "Webinars jurídicos, eventos da OAB e treinamentos com aproveitamento de carga horária. Controle de acesso por número de inscrição na OAB.",
     bullets: [
       "Acesso por inscrição OAB",
@@ -46,7 +46,7 @@ const CASOS = [
     color: "#FF8A3D",
     bg: "rgba(255,138,61,0.10)",
     border: "rgba(255,138,61,0.22)",
-    persona: "Empresa / RH",
+    persona: "Empresas / RH / Marketing e T&D",
     tag: "Corporativo",
     desc: "Treinamentos corporativos, townhalls, comunicados internos e onboarding com controle de presença, NPS integrado e relatório para gestores.",
     bullets: [
@@ -70,7 +70,7 @@ export function CasosDeUso() {
             {" "}foi feita?
           </h2>
           <p className="text-ol-slate max-w-xl mx-auto">
-            Da saúde ao corporate, a plataforma se adapta ao seu contexto com
+            De empresas de médio e grande porte, agências de eventos e especialistas com cursos e produtos digitais. A plataforma se adapta ao seu contexto com
             modos de acesso e configurações específicas para cada segmento.
           </p>
         </div>

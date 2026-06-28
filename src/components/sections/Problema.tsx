@@ -49,7 +49,7 @@ export function Problema() {
           <p className="text-ol-slate max-w-xl mx-auto">
             São plataformas para o público geral — mas não possuem amplo
             controle de acesso, segurança contra compartilhamento, página
-            customizável, módulo de pagamento e captura de leads.
+            customizável, módulo de pagamento, captura de leads e relatórios.
           </p>
         </div>
 

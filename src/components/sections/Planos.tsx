@@ -78,7 +78,7 @@ export function Planos() {
             <span className="text-gradient">crescimento do seu evento</span>
           </h2>
           <p className="text-ol-slate max-w-xl mx-auto">
-            Sem taxa de setup. Cancele quando quiser. Preços em Reais.
+            Sem taxa de setup. Cancele quando quiser. Preços em Reais. Suporte em português feito por profissionais brasileiros.
           </p>
 
           {/* Toggle */}

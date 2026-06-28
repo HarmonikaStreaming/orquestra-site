@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
+import { ScrollToTop } from "@/components/ui/ScrollToTop";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -8,6 +9,10 @@ const manrope = Manrope({
   weight: ["400", "500", "600", "700", "800"],
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  themeColor: "#0B1320",
+};
 
 export const metadata: Metadata = {
   title: "Orquestra Live — Plataforma de Eventos Digitais",
@@ -45,6 +50,11 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   robots: { index: true, follow: true },
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    title: "Orquestra Live",
+  },
 };
 
 export default function RootLayout({
@@ -54,6 +64,7 @@ export default function RootLayout({
     <html lang="pt-BR" className={`${manrope.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-ol-bg text-white">
         {children}
+        <ScrollToTop />
       </body>
     </html>
   );

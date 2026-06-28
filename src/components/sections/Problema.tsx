@@ -65,7 +65,7 @@ export function Problema() {
               </div>
               <h3 className="text-lg font-bold text-white">{p.title}</h3>
               <p className="text-sm text-ol-slate leading-relaxed">{p.body}</p>
-              <p className="text-xs font-semibold text-red-400 bg-red-500/10 border border-red-500/20 rounded-lg px-3 py-2">
+              <p className="text-xs font-semibold text-white bg-red-500/10 border border-red-500/20 rounded-lg px-3 py-2">
                 {p.highlight}
               </p>
             </div>

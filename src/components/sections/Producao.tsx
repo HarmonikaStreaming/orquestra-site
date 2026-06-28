@@ -18,7 +18,7 @@ export function Producao() {
           <p className="text-ol-slate max-w-2xl mx-auto">
             A Orquestra é uma plataforma poderosa — mas se você quiser transmitir
             com qualidade de broadcast, a{" "}
-            <span className="text-white font-semibold">Harmonika Produtora</span>{" "}
+            <span className="text-white">Harmonika Produtora</span>{" "}
             cuida de tudo pra você.
           </p>
         </div>
@@ -54,20 +54,18 @@ export function Producao() {
 
           {/* Content right */}
           <div className="space-y-5">
-            {/* Harmonika logo + link */}
+            {/* Harmonika logo */}
             <div className="flex flex-col gap-3">
-              <img
-                src="/images/logo-harmonika.png"
-                alt="Harmonika Produtora"
-                style={{ height: "240px", width: "auto", objectFit: "contain" }}
-              />
               <a
                 href="https://www.harmonika.com.br"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-medium text-ol-cyan hover:text-white transition-colors"
               >
-                Conheça a Harmonika Produtora →
+                <img
+                  src="/images/logo-harmonika.png"
+                  alt="Harmonika Produtora"
+                  style={{ height: "240px", width: "auto", objectFit: "contain" }}
+                />
               </a>
             </div>
 
@@ -84,14 +82,16 @@ export function Producao() {
                 <p className="text-sm text-ol-slate leading-relaxed">
                   Equipe técnica da Harmonika, estúdio profissional ou estrutura montada no local do seu evento. Transmissão em qualquer lugar do Brasil.
                 </p>
-                <a
-                  href={WA_LINK_DUVIDA}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg border border-white/20 px-4 py-2 text-xs font-semibold text-white transition-all duration-200 hover:border-white/40 hover:bg-white/5"
-                >
-                  Fale com a equipe da Harmonika
-                </a>
+                <div className="flex justify-center">
+                  <a
+                    href={WA_LINK_DUVIDA}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg border border-white/20 px-4 py-2 text-xs font-semibold text-white transition-all duration-200 hover:border-white/40 hover:bg-white/5"
+                  >
+                    Solicite seu orçamento para a Harmonika
+                  </a>
+                </div>
               </div>
             </div>
 

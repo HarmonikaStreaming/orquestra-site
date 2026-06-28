@@ -31,9 +31,9 @@ export function Hero() {
           </h1>
 
           <p className="animate-fade-up delay-200 text-lg text-ol-slate leading-relaxed max-w-lg mx-auto lg:mx-0">
-            Plataforma white&nbsp;label de streaming para eventos corporativos
-            e lançamentos digitais. Controle de acesso, captura de leads e
-            relatórios completos — tudo com a sua marca.
+            Plataforma de streaming personalizável para eventos corporativos
+            e lançamentos digitais. Controle de acesso, captura de leads,
+            módulo de pagamento, relatórios completos e muito mais.
           </p>
 
           <div className="animate-fade-up delay-300 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -51,9 +51,6 @@ export function Hero() {
             </a>
           </div>
 
-          <p className="animate-fade-up delay-400 text-xs text-ol-dim">
-            Sem cartão de crédito · Configuração em minutos · Cancele quando quiser
-          </p>
         </div>
 
         {/* Platform mockup */}

@@ -47,9 +47,9 @@ export function Problema() {
             <span className="text-gradient">não são suficientes?</span>
           </h2>
           <p className="text-ol-slate max-w-xl mx-auto">
-            São plataformas ótimas para o público geral — mas não para
-            profissionais que precisam de controle acesso, página personalizada,
-            módulo de pagamento e captura de leads.
+            São plataformas para o público geral — mas não possuem amplo
+            controle de acesso, segurança contra compartilhamento, página
+            customizável, módulo de pagamento e captura de leads.
           </p>
         </div>
 

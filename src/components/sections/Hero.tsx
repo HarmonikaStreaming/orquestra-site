@@ -20,7 +20,7 @@ export function Hero() {
       <div className="relative mx-auto max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* Copy */}
         <div className="text-center lg:text-left space-y-6">
-          <div className="badge animate-fade-up">
+          <div className="badge animate-fade-up mt-3">
             <span className="animate-pulse-live w-1.5 h-1.5 rounded-full bg-ol-cyan inline-block" />
             Plataforma de Eventos Digitais
           </div>

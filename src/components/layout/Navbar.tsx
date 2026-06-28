@@ -33,7 +33,7 @@ export function Navbar() {
           <img
             src="/images/logo-orquestra.png"
             alt="Orquestra Live"
-            style={{ height: "48px", objectFit: "contain" }}
+            style={{ height: "144px", objectFit: "contain" }}
           />
         </a>
 

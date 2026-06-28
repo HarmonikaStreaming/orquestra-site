@@ -29,11 +29,11 @@ export function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
-        <a href="#hero" aria-label="Orquestra Live — início">
+        <a href="#hero" aria-label="Orquestra Live — início" className="flex items-center">
           <img
             src="/images/logo-orquestra.png"
             alt="Orquestra Live"
-            style={{ height: "144px", objectFit: "contain" }}
+            style={{ height: "144px", objectFit: "contain", display: "block" }}
           />
         </a>
 

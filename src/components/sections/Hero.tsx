@@ -22,11 +22,11 @@ export function Hero() {
         <div className="text-center lg:text-left space-y-6">
           <div className="badge animate-fade-up">
             <span className="animate-pulse-live w-1.5 h-1.5 rounded-full bg-ol-cyan inline-block" />
-            White Label · Streaming · Leads
+            Plataforma de Eventos Digitais
           </div>
 
           <h1 className="animate-fade-up delay-100 text-4xl sm:text-5xl xl:text-6xl font-black leading-tight tracking-tight">
-            Seu evento em{" "}
+            Seu evento online em{" "}
             <span className="text-gradient">perfeita sintonia.</span>
           </h1>
 

@@ -24,9 +24,12 @@ export function Producao() {
         {/* Two columns: video left, content right */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
 
-          {/* Video area */}
-          <div className="flex flex-col gap-3">
-            <div className="relative rounded-2xl overflow-hidden border border-ol-border bg-ol-bg aspect-video">
+          {/* Video area — flex-col so the video div expands to fill the grid row height */}
+          <div className="flex flex-col">
+            <div
+              className="relative rounded-2xl overflow-hidden border border-ol-border bg-ol-bg flex-1 min-h-52"
+              style={{ minHeight: "280px" }}
+            >
               <div
                 className="absolute inset-0 flex flex-col items-center justify-center gap-4"
                 style={{ background: "linear-gradient(135deg, #0f1e3a 0%, #1a0b3a 100%)" }}
@@ -47,11 +50,10 @@ export function Producao() {
                 src=""
               />
             </div>
-            <p className="text-center text-xs text-ol-dim">Em breve: showreel de transmissões</p>
           </div>
 
           {/* Content right */}
-          <div className="card-glass rounded-2xl p-8 flex flex-col justify-between h-full">
+          <div className="card-glass rounded-2xl p-8 flex flex-col justify-between">
             {/* Logo centralizada */}
             <div className="flex justify-center">
               <a
@@ -62,13 +64,13 @@ export function Producao() {
                 <img
                   src="/images/logo-harmonika.png"
                   alt="Harmonika Produtora"
-                  style={{ height: "120px", width: "auto", objectFit: "contain" }}
+                  style={{ height: "160px", width: "auto", objectFit: "contain" }}
                 />
               </a>
             </div>
 
             {/* Texto descritivo centralizado */}
-            <p className="text-sm text-ol-slate leading-relaxed text-center px-2">
+            <p className="text-sm text-ol-slate leading-relaxed text-center px-4">
               Conte com a equipe da Harmonika que possui mais de 20 anos de experiência no segmento audiovisual, possui estúdios profissionais e possibilidade de levar uma estrutura completa para cobertura e transmissão do seu evento em qualquer lugar do Brasil.
             </p>
 
@@ -77,7 +79,7 @@ export function Producao() {
               href={WA_LINK_PRODUCAO}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-full items-center justify-center gap-2 rounded-xl px-5 py-4 text-sm font-bold text-white transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
+              className="flex w-full items-center justify-center gap-2 rounded-xl px-5 py-4 text-sm font-bold text-white transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5 mt-auto"
               style={{ background: "#25D366" }}
             >
               <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 shrink-0">

@@ -7,6 +7,7 @@ import { ComoFunciona }   from "@/components/sections/ComoFunciona";
 import { Funcionalidades } from "@/components/sections/Funcionalidades";
 import { CasosDeUso }     from "@/components/sections/CasosDeUso";
 import { Producao }       from "@/components/sections/Producao";
+import { OrquestraAcademy } from "@/components/sections/OrquestraAcademy";
 import { Planos }         from "@/components/sections/Planos";
 import { FAQ }            from "@/components/sections/FAQ";
 import { CTAFinal }       from "@/components/sections/CTAFinal";
@@ -24,6 +25,7 @@ export default function Home() {
         <CasosDeUso />
         <Planos />
         <Producao />
+        <OrquestraAcademy />
         <FAQ />
         <CTAFinal />
       </main>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Hero() {
   return (
     <section
@@ -20,9 +22,14 @@ export function Hero() {
       <div className="relative mx-auto max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* Copy */}
         <div className="text-center lg:text-left space-y-6">
-          <div className="badge animate-fade-up mt-3">
-            <span className="animate-pulse-live w-1.5 h-1.5 rounded-full bg-ol-cyan inline-block" />
-            Plataforma de Eventos Digitais
+          <div className="animate-fade-up mt-3 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
+            <div className="badge">
+              <span className="animate-pulse-live w-1.5 h-1.5 rounded-full bg-ol-cyan inline-block" />
+              Plataforma de Eventos Digitais
+            </div>
+            <Link href="/academy" className="badge transition hover:opacity-80">
+              Plataforma Academy
+            </Link>
           </div>
 
           <h1 className="animate-fade-up delay-100 text-4xl sm:text-5xl xl:text-6xl font-black leading-tight tracking-tight">

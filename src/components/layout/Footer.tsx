@@ -22,9 +22,11 @@ const LINKS = [
   {
     heading: "Legal",
     items: [
-      { label: "Privacidade",  href: "/privacidade"  },
-      { label: "Termos de uso", href: "/termos"      },
-      { label: "LGPD",         href: "/lgpd"         },
+      { label: "Termos de uso",          href: "https://app.orquestralive.com.br/legal/termos-de-uso" },
+      { label: "Política de Privacidade", href: "https://app.orquestralive.com.br/legal/privacidade" },
+      { label: "Cookies",                href: "https://app.orquestralive.com.br/legal/cookies" },
+      { label: "DPA (LGPD)",             href: "https://app.orquestralive.com.br/legal/dpa" },
+      { label: "SLA",                    href: "https://app.orquestralive.com.br/legal/sla" },
     ],
   },
 ];

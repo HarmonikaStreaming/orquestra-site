@@ -187,7 +187,7 @@ export function Planos() {
           </div>
           <div className="flex items-center gap-4 shrink-0">
             <div className="text-right">
-              <div className="text-2xl font-black text-white">R$ 297</div>
+              <div className="text-2xl font-black text-white">R$ 984</div>
               <div className="text-xs text-ol-slate">por evento</div>
             </div>
             <a href="/checkout" className="btn-outline px-5 py-2.5 text-sm whitespace-nowrap">

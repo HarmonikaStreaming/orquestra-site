@@ -9,30 +9,32 @@ const PLANOS = [
     id: "solo",
     name: "Solo",
     desc: "Para profissionais que estão começando com eventos digitais.",
-    precoMensal: 197,
-    precoAnual: 158,
+    precoMensal: 297,
+    precoAnual: 238,
     popular: false,
     cor: "#2563EB",
     items: [
-      "3 eventos por mês",
-      "Até 500 participantes / evento",
+      "1 evento por mês",
+      "Até 200 participantes / evento",
+      "600 participante-horas de audiência / mês",
       "Todos os modos de acesso",
       "Chat, enquetes e reações",
       "Relatórios com exportação CSV",
-      "Suporte por e-mail",
+      "Suporte por e-mail + assistente 24h",
     ],
   },
   {
     id: "pro",
     name: "Pro",
     desc: "Para profissionais e agências com volume maior de eventos.",
-    precoMensal: 497,
-    precoAnual: 398,
+    precoMensal: 797,
+    precoAnual: 638,
     popular: true,
     cor: "#7C3AED",
     items: [
-      "10 eventos por mês",
-      "Até 2.000 participantes / evento",
+      "4 eventos por mês",
+      "Até 1.000 participantes / evento",
+      "1.500 participante-horas de audiência / mês",
       "White label completo",
       "Pagamentos integrados (MP)",
       "Emails automáticos (Resend)",
@@ -44,14 +46,15 @@ const PLANOS = [
     id: "enterprise",
     name: "Enterprise",
     desc: "Para empresas e instituições com demanda recorrente e alta.",
-    precoMensal: 1500,
-    precoAnual: 1200,
+    precoMensal: 2500,
+    precoAnual: 2000,
+    aPartirDe: true,
     popular: false,
     cor: "#14B8A6",
     items: [
       "Eventos ilimitados",
-      "Participantes ilimitados",
-      "SLA e suporte dedicado",
+      "5.000 participante-horas / mês (excedente R$ 0,80)",
+      "SLA 99,9% e suporte dedicado",
       "Usuários ilimitados",
       "Integração API / Webhook",
       "Onboarding personalizado",
@@ -132,6 +135,9 @@ export function Planos() {
                   <p className="text-sm text-ol-slate mt-1">{p.desc}</p>
                 </div>
 
+                {"aPartirDe" in p && p.aPartirDe && (
+                  <p className="text-xs text-ol-slate -mb-4">a partir de</p>
+                )}
                 <div className="flex items-end gap-1">
                   <span className="text-sm text-ol-slate self-start mt-2">R$</span>
                   <span className="text-4xl font-black text-white">{fmt(preco)}</span>
@@ -169,6 +175,13 @@ export function Planos() {
           })}
         </div>
 
+        {/* Régua de audiência */}
+        <p className="text-xs text-ol-slate text-center max-w-3xl mx-auto mb-8">
+          <strong className="text-white">Participante-hora</strong> = 1 pessoa assistindo por 1 hora. Excedente em qualquer plano:
+          <strong className="text-white"> R$ 1,00 por participante-hora</strong>, cobrado no fechamento do mês com aviso prévio no painel.
+          Gravação (VOD) e todos os recursos de engajamento estão inclusos em todos os planos.
+        </p>
+
         {/* Card avulso */}
         <div className="card-glass p-6 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-5">
@@ -181,7 +194,7 @@ export function Planos() {
               <h3 className="text-base font-black text-white">Evento Avulso</h3>
               <p className="text-sm text-ol-slate mt-0.5">
                 Precisa de apenas um evento? Contrate de forma avulsa, sem mensalidade.
-                Até 1.000 participantes, todos os recursos inclusos.
+                Até 1.000 participantes (3.000 participante-horas), todos os recursos inclusos.
               </p>
             </div>
           </div>

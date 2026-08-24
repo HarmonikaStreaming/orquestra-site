@@ -14,13 +14,14 @@ const PLANOS = [
     popular: false,
     cor: "#2563EB",
     items: [
-      "1 evento por mês",
-      "Até 200 participantes / evento",
-      "600 participante-horas de audiência / mês",
-      "Todos os modos de acesso",
-      "Chat, enquetes e reações",
-      "Relatórios com exportação CSV",
-      "Suporte por e-mail + assistente 24h",
+      "1 evento ao vivo por mês",
+      "Até 200 pessoas assistindo por evento",
+      "600 horas de audiência/mês (ex.: 200 pessoas × 3h)",
+      "Página do evento com a sua cara, pronta em minutos",
+      "Você escolhe quem entra: e-mail, senha, CPF ou convite",
+      "Chat, enquetes e reações ao vivo com o público",
+      "Relatório de quem assistiu e por quanto tempo (planilha)",
+      "Ajuda por e-mail + assistente automático 24h",
     ],
   },
   {
@@ -32,14 +33,15 @@ const PLANOS = [
     popular: true,
     cor: "#7C3AED",
     items: [
-      "4 eventos por mês",
-      "Até 1.000 participantes / evento",
-      "1.500 participante-horas de audiência / mês",
-      "White label completo",
-      "Pagamentos integrados (MP)",
-      "Emails automáticos (Resend)",
-      "Suporte prioritário via WhatsApp",
-      "Multi-usuário (3 operadores)",
+      "Tudo do Solo, e mais:",
+      "4 eventos ao vivo por mês",
+      "Até 1.000 pessoas assistindo por evento",
+      "1.500 horas de audiência/mês (ex.: 500 pessoas × 3h)",
+      "Só a sua marca aparece — a nossa fica invisível",
+      "Venda de ingressos na própria página (Pix, cartão e boleto)",
+      "E-mails automáticos: confirmação, lembretes e acesso",
+      "Atendimento prioritário pelo WhatsApp",
+      "Até 3 pessoas da sua equipe no painel",
     ],
   },
   {
@@ -52,13 +54,14 @@ const PLANOS = [
     popular: false,
     cor: "#14B8A6",
     items: [
-      "Eventos ilimitados",
-      "5.000 participante-horas / mês (excedente R$ 0,80)",
-      "SLA 99,9% e suporte dedicado",
-      "Usuários ilimitados",
-      "Integração API / Webhook",
-      "Onboarding personalizado",
-      "Servidor dedicado sob demanda",
+      "Tudo do Pro, e mais:",
+      "Quantos eventos precisar, sem limite mensal",
+      "5.000 horas de audiência/mês (ex.: 1.600 pessoas × 3h)",
+      "Equipe da Orquestra acompanhando seus eventos (SLA 99,9%)",
+      "Quantas pessoas da sua equipe quiser no painel",
+      "Conecta com os sistemas da sua empresa (API)",
+      "Implantação guiada: montamos o primeiro evento com você",
+      "Estrutura reforçada para grandes públicos",
     ],
   },
 ];
@@ -135,11 +138,13 @@ export function Planos() {
                   <p className="text-sm text-ol-slate mt-1">{p.desc}</p>
                 </div>
 
-                {"aPartirDe" in p && p.aPartirDe && (
-                  <p className="text-xs text-ol-slate -mb-4">a partir de</p>
-                )}
                 <div className="flex items-end gap-1">
-                  <span className="text-sm text-ol-slate self-start mt-2">R$</span>
+                  <span className="flex flex-col self-start mt-1 text-ol-slate">
+                    {"aPartirDe" in p && p.aPartirDe && (
+                      <span className="text-[11px] leading-tight whitespace-nowrap">a partir de</span>
+                    )}
+                    <span className="text-sm">R$</span>
+                  </span>
                   <span className="text-4xl font-black text-white">{fmt(preco)}</span>
                   <span className="text-sm text-ol-slate mb-1">/mês</span>
                 </div>
@@ -177,9 +182,10 @@ export function Planos() {
 
         {/* Régua de audiência */}
         <p className="text-xs text-ol-slate text-center max-w-3xl mx-auto mb-8">
-          <strong className="text-white">Participante-hora</strong> = 1 pessoa assistindo por 1 hora. Excedente em qualquer plano:
-          <strong className="text-white"> R$ 1,00 por participante-hora</strong>, cobrado no fechamento do mês com aviso prévio no painel.
-          Gravação (VOD) e todos os recursos de engajamento estão inclusos em todos os planos.
+          <strong className="text-white">Como funciona a audiência:</strong> cada hora que uma pessoa passa assistindo conta como 1 &quot;hora de audiência&quot;.
+          Passou da franquia do plano? Sem susto: avisamos antes no painel e o adicional é de
+          <strong className="text-white"> R$ 1,00 por hora de audiência</strong>, cobrado só no fechamento do mês.
+          Gravação dos eventos e todos os recursos de interação com o público estão inclusos em todos os planos.
         </p>
 
         {/* Card avulso */}

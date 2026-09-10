@@ -186,6 +186,7 @@ export function Planos() {
           Passou da franquia do plano? Sem susto: avisamos antes no painel e o adicional é de
           <strong className="text-white"> R$ 1,00 por hora de audiência</strong>, cobrado só no fechamento do mês.
           Gravação dos eventos e todos os recursos de interação com o público estão inclusos em todos os planos.
+          Planos mensais <strong className="text-white">sem fidelidade</strong> — cancele quando quiser.
         </p>
 
         {/* Card avulso */}
@@ -200,7 +201,8 @@ export function Planos() {
               <h3 className="text-base font-black text-white">Evento Avulso</h3>
               <p className="text-sm text-ol-slate mt-0.5">
                 Precisa de apenas um evento? Contrate de forma avulsa, sem mensalidade.
-                Até 1.000 participantes (3.000 participante-horas), todos os recursos inclusos.
+                Até 1.000 participantes (1.500 participante-horas), todos os recursos inclusos
+                — com suporte dedicado no dia do evento.
               </p>
             </div>
           </div>

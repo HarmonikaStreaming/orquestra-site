@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import { ScrollToTop } from "@/components/ui/ScrollToTop";
+import { CookieConsent } from "@/components/ui/CookieConsent";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -65,6 +66,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-ol-bg text-white">
         {children}
         <ScrollToTop />
+        <CookieConsent />
       </body>
     </html>
   );

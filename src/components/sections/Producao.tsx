@@ -1,3 +1,5 @@
+import { HarmonikaVideo } from "@/components/sections/HarmonikaVideo";
+
 const WA_LINK_PRODUCAO =
   "https://wa.me/5516981357031?text=Estou%20contratando%20a%20plataforma%20Orquestra%20e%20quero%20saber%20mais%20sobre%20os%20servi%C3%A7os%20do%20est%C3%BAdio%20e%20das%20transmiss%C3%B5es%20profissionais%20com%20equipe%20no%20local%20do%20meu%20evento.";
 
@@ -26,30 +28,7 @@ export function Producao() {
 
           {/* Video area — flex-col so the video div expands to fill the grid row height */}
           <div className="flex flex-col">
-            <div
-              className="relative rounded-2xl overflow-hidden border border-ol-border bg-ol-bg flex-1 min-h-52"
-              style={{ minHeight: "280px" }}
-            >
-              <div
-                className="absolute inset-0 flex flex-col items-center justify-center gap-4"
-                style={{ background: "linear-gradient(135deg, #0f1e3a 0%, #1a0b3a 100%)" }}
-              >
-                <div className="w-16 h-16 rounded-full bg-white/10 border border-white/20 backdrop-blur flex items-center justify-center">
-                  <svg viewBox="0 0 20 20" fill="currentColor" className="w-7 h-7 text-white ml-0.5">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <p className="text-sm font-semibold text-white">Showreel Harmonika Produtora</p>
-              </div>
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="absolute inset-0 w-full h-full object-cover"
-                src=""
-              />
-            </div>
+            <HarmonikaVideo />
           </div>
 
           {/* Content right */}

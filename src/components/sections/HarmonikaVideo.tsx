@@ -26,21 +26,33 @@ export function HarmonikaVideo() {
   const src =
     `https://www.youtube.com/embed/${VIDEO_ID}` +
     `?autoplay=1&mute=1&loop=1&playlist=${VIDEO_ID}` +
-    `&controls=0&modestbranding=1&rel=0&playsinline=1&disablekb=1&enablejsapi=1`;
+    `&controls=0&modestbranding=1&rel=0&playsinline=1&disablekb=1&fs=0&iv_load_policy=3&enablejsapi=1`;
 
   return (
     <div
       className="relative rounded-2xl overflow-hidden border border-ol-border bg-black flex-1 min-h-52"
       style={{ minHeight: "280px" }}
     >
+      {/* O iframe mantém 16:9 e é escalado para COBRIR o container (sem tarjas
+          pretas) — o scale extra recorta as bordas, onde o YouTube mostra
+          título/logo no início e a marca-d'água durante a reprodução. */}
       <iframe
         ref={iframeRef}
         src={src}
         title="Showreel Harmonika Produtora"
         allow="autoplay; encrypted-media; picture-in-picture"
-        allowFullScreen
-        className="absolute inset-0 h-full w-full"
-        style={{ border: 0 }}
+        className="absolute left-1/2 top-1/2"
+        style={{
+          border: 0,
+          aspectRatio: "16 / 9",
+          width: "auto",
+          height: "auto",
+          minWidth: "100%",
+          minHeight: "100%",
+          transform: "translate(-50%, -50%) scale(1.35)",
+          transformOrigin: "center",
+          pointerEvents: "none",
+        }}
       />
       <button
         type="button"

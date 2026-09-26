@@ -33,9 +33,9 @@ export function HarmonikaVideo() {
       className="relative rounded-2xl overflow-hidden border border-ol-border bg-black flex-1 min-h-52"
       style={{ minHeight: "280px" }}
     >
-      {/* O iframe mantém 16:9 e é escalado para COBRIR o container (sem tarjas
-          pretas) — o scale extra recorta as bordas, onde o YouTube mostra
-          título/logo no início e a marca-d'água durante a reprodução. */}
+      {/* O iframe mantém 16:9 e apenas COBRE o container (min 100% em ambos os
+          eixos) — elimina as tarjas pretas recortando só o mínimo necessário,
+          preservando o enquadramento do vídeo. */}
       <iframe
         ref={iframeRef}
         src={src}
@@ -49,7 +49,7 @@ export function HarmonikaVideo() {
           height: "auto",
           minWidth: "100%",
           minHeight: "100%",
-          transform: "translate(-50%, -50%) scale(1.35)",
+          transform: "translate(-50%, -50%) scale(1.01)",
           transformOrigin: "center",
           pointerEvents: "none",
         }}

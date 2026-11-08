@@ -50,11 +50,16 @@ export function Hero() {
                 <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>
             </a>
-            <a href="#demo" className="btn-outline px-8 py-3.5 text-base rounded-lg">
+            <a
+              href="https://wa.me/5516981357031?text=Ol%C3%A1!%20Quero%20agendar%20uma%20demonstra%C3%A7%C3%A3o%20da%20Orquestra%20Live."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline px-8 py-3.5 text-base rounded-lg"
+            >
               <svg viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
               </svg>
-              Ver demonstração
+              Agendar demonstração
             </a>
           </div>
 

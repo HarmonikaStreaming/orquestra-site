@@ -13,9 +13,9 @@ const PILARES = [
     title: "Player blindado, sessão única",
     items: [
       "Player com restrição de compartilhamento",
-      "DRM e marca d'água dinâmica",
+      "Vídeo com link assinado e marca d'água dinâmica",
       "Sessão única por dispositivo",
-      "Bloqueio por inatividade configurável",
+      "Inscrição restrita ao domínio de e-mail da empresa",
     ],
   },
   {
@@ -52,7 +52,7 @@ const PILARES = [
     title: "Dados que geram decisões",
     items: [
       "Relatórios de presença e permanência",
-      "Taxa de engajamento por seção",
+      "Engajamento por participante: chat, reações e enquetes",
       "Resultados de enquetes em tempo real",
       "Exportação CSV com todos os leads",
     ],

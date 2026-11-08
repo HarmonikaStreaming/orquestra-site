@@ -4,6 +4,7 @@ import "./globals.css";
 import { ScrollToTop } from "@/components/ui/ScrollToTop";
 import { CookieConsent } from "@/components/ui/CookieConsent";
 import { Analytics } from "@vercel/analytics/next";
+import { SITE_URL } from "@/lib/site-url";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -17,6 +18,8 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  alternates: { canonical: "/" },
   title: "Orquestra Live — Plataforma de Eventos Digitais",
   description:
     "Plataforma white label de streaming para eventos corporativos e lançamentos digitais. Controle de acesso, captura de leads, branding personalizado e relatórios completos.",

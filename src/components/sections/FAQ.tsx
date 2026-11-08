@@ -4,8 +4,8 @@ import { useState } from "react";
 
 const FAQS = [
   {
-    q: "A plataforma funciona com qualquer serviço de transmissão?",
-    a: "Sim. A Orquestra Live é compatível com qualquer URL de vídeo: YouTube (oculto ou privado), Vimeo, Mux, AWS Media, Zoom, e qualquer serviço que gere um embed ou URL HLS. Você configura o link de transmissão no painel e a plataforma exibe dentro do player protegido.",
+    q: "Com quais programas de transmissão a plataforma funciona?",
+    a: "Com qualquer programa ou equipamento que transmita por RTMP ou SRT, como vMix, OBS, Wirecast e encoders de hardware. Também dá para transmitir direto do navegador, sem instalar nada. O vídeo é entregue pela nossa própria rede, com link assinado e marca d'água, então não existe um link do YouTube que possa vazar. Cada evento tem uma transmissão de backup para trocar de sinal sem derrubar o público.",
   },
   {
     q: "Como funciona o controle de acesso?",
@@ -13,7 +13,7 @@ const FAQS = [
   },
   {
     q: "Posso usar minha própria marca (white label)?",
-    a: "Completamente. Você configura nome do evento, paleta de cores, logo e domínio personalizado. Seus participantes veem o seu nome, não o nome da Orquestra Live. É como ter uma plataforma própria, sem o custo de desenvolvimento.",
+    a: "Sim. Você configura nome do evento, paleta de cores, logo, banner, imagem de fundo e a página de inscrição. Seus participantes veem a sua marca, não a da Orquestra Live. É como ter uma plataforma própria, sem o custo de desenvolvimento.",
   },
   {
     q: "Como é feito o pagamento dos participantes?",
@@ -25,7 +25,7 @@ const FAQS = [
   },
   {
     q: "Como faço para testar antes de contratar?",
-    a: "Entre em contato pelo nosso WhatsApp ou e-mail. Oferecemos uma demonstração guiada da plataforma e um evento de teste para você configurar do zero e ver como funciona antes de qualquer compromisso financeiro.",
+    a: "Entre em contato pelo nosso WhatsApp ou e-mail. Oferecemos uma demonstração guiada da plataforma e montamos um evento de teste com você, para ver tudo funcionando antes de contratar.",
   },
 ];
 

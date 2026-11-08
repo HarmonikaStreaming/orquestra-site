@@ -15,8 +15,6 @@ const LINKS = [
     items: [
       { label: "FAQ",       href: "#faq"             },
       { label: "Contato",   href: "mailto:ola@orquestralive.com.br" },
-      { label: "Blog",      href: "/blog"            },
-      { label: "Status",    href: "/status"          },
     ],
   },
   {

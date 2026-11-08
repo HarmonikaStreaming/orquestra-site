@@ -9,7 +9,7 @@ const FEATURES = [
       </svg>
     ),
     title: "Chat ao Vivo",
-    desc: "Interação em tempo real com moderação. Mensagens instantâneas, menções e reações durante a transmissão.",
+    desc: "Interação em tempo real com moderação. Mensagens instantâneas, reações e lista de quem está na sala durante a transmissão.",
   },
   {
     color: "#14B8A6",
@@ -45,7 +45,7 @@ const FEATURES = [
       </svg>
     ),
     title: "Relatórios Detalhados",
-    desc: "Presença, tempo médio assistido, pico de audiência, engajamento por seção e resultados de enquetes. Tudo exportável em CSV.",
+    desc: "Presença minuto a minuto, tempo médio assistido, pico de audiência, transcrição do chat e resultados de enquetes. Tudo exportável em planilha.",
   },
   {
     color: "#14B8A6",

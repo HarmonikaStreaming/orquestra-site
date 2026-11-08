@@ -8,8 +8,8 @@ const CASOS = [
     tag: "Segmento médico",
     desc: "Congressos científicos, atualização médica continuada e simpósios com controle de acesso por número de registro profissional (CFM, CRM, CRO).",
     bullets: [
-      "Acesso por registro profissional com possibilidade de integração via API",
-      "Certificado de participação automático",
+      "Acesso por número de registro profissional (CRM, CRO e outros)",
+      "Certificado com carga horária e validação por QR code",
       "Relatório de presença para credenciamento",
     ],
   },
@@ -24,7 +24,7 @@ const CASOS = [
     bullets: [
       "Acesso por inscrição OAB",
       "Controle de permanência para carga horária",
-      "Formulário de feedback pós-evento",
+      "Certificado emitido por frequência mínima",
     ],
   },
   {
@@ -38,7 +38,7 @@ const CASOS = [
     bullets: [
       "Checkout Mercado Pago integrado",
       "Captura de leads com formulário LGPD",
-      "Sequência de emails automática pós-evento",
+      "Lembretes automáticos por e-mail antes do evento",
     ],
   },
   {
@@ -48,10 +48,10 @@ const CASOS = [
     border: "rgba(255,138,61,0.22)",
     persona: "Empresas / RH / Marketing e T&D",
     tag: "Corporativo",
-    desc: "Treinamentos corporativos, townhalls, comunicados internos e onboarding com controle de presença, NPS integrado e relatório para gestores.",
+    desc: "Treinamentos corporativos, townhalls, comunicados internos e onboarding com controle de presença, enquetes ao vivo e relatório para gestores.",
     bullets: [
       "Acesso restrito por matrícula ou e-mail",
-      "NPS e pesquisa de satisfação pós-evento",
+      "Enquetes e quiz ao vivo com resultado em tempo real",
       "Dashboard de presença para gestores",
     ],
   },

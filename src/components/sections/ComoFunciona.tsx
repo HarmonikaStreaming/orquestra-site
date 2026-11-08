@@ -18,7 +18,7 @@ const STEPS = [
       </svg>
     ),
     title: "Configura",
-    desc: "Cole o link de transmissão (YouTube, Vimeo, Mux), ative enquetes, formulários e configure o acesso dos participantes.",
+    desc: "Conecte o vMix, o OBS ou o seu encoder com a chave do evento, ou transmita direto do navegador. Ative enquetes, formulários e configure o acesso dos participantes.",
   },
   {
     num: "03",

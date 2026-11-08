@@ -3,6 +3,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/academy" },
   title: "Orquestra Academy — Em breve",
   description: "A Orquestra Academy está a caminho. Em breve, sua plataforma própria de educação continuada.",
 };

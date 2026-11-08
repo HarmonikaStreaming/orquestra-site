@@ -46,7 +46,7 @@ export function CTAFinal() {
         </div>
 
         <p className="text-xs text-ol-dim">
-          Sem cartão de crédito para começar · Suporte em português · Dados hospedados no Brasil
+          Sem fidelidade nos planos mensais · Suporte em português · Dados tratados conforme a LGPD
         </p>
       </div>
     </section>

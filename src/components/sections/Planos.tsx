@@ -59,7 +59,6 @@ const PLANOS = [
       "5.000 horas de audiência/mês (ex.: 1.600 pessoas × 3h)",
       "Equipe da Orquestra acompanhando seus eventos (SLA 99,9%)",
       "Quantas pessoas da sua equipe quiser no painel",
-      "Conecta com os sistemas da sua empresa (API)",
       "Implantação guiada: montamos o primeiro evento com você",
       "Estrutura reforçada para grandes públicos",
     ],

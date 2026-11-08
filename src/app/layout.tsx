@@ -3,6 +3,7 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import { ScrollToTop } from "@/components/ui/ScrollToTop";
 import { CookieConsent } from "@/components/ui/CookieConsent";
+import { Analytics } from "@vercel/analytics/next";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -67,6 +68,9 @@ export default function RootLayout({
         {children}
         <ScrollToTop />
         <CookieConsent />
+        {/* Vercel Web Analytics: sem cookies, conta todas as visitas (o GA só
+            conta quem aceita o banner). Ativado no projeto em 08/11/2026. */}
+        <Analytics />
       </body>
     </html>
   );
